@@ -1,3 +1,4 @@
-# My Awesome Book
+# 开发框架简记
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+                主要技术：react\redux\redux-form\react-table\coreui\springboot\mysql\mongodb\kafka
+
