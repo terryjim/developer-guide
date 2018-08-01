@@ -10,9 +10,5 @@ html文件中引用方式：%PUBLIC\_URL%，如：
 
 在package.json中添加`"homepage":"."`
 
-
-
 `//js中引用方式：`
-
-
 
