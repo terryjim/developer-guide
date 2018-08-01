@@ -10,6 +10,10 @@ _**\[删除\] **_操作默认为 defaultUrl/project/save
 
 _**\[查询\] **_操作默认为 defaultUrl/project/getByPage
 
+若不使用约定地址则在配置文件中自行设置地址。
+
+代码如下：
+
 ```
 const defaultUrl = "http://localhost:9000/"
 const TParams = {
@@ -34,7 +38,6 @@ const TParams = {
     manufacturers: [{ 'id': 1, 'name': '平冶' }, { 'id': 2, 'name': '智果' }]
 }
 window.TParams = TParams
-
 ```
 
 
