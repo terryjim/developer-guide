@@ -27,7 +27,10 @@ EditCompanyForm = reduxForm({
 
 ```
 import { Field, reduxForm } from 'redux-form'
+......
+ <form onSubmit={handleSubmit}>
 <Field name="email" component="input" type="email" />
+</form>
 ```
 
 
