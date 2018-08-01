@@ -1,0 +1,27 @@
+# 引入redux-from
+
+1、reducers/index.js文件中引入reducer
+
+```
+import { combineReducers } from 'redux'
+import loading from './loading'
+import err from './err'
+import success from './success'
+...
+import { reducer as formReducer } from 'redux-form'
+export default combineReducers({form: formReducer,loading,err,success,... })
+
+
+```
+
+2、具体表单文件中用reduxForm封装，同时定义form的名称
+
+```
+EditCompanyForm = reduxForm({
+  form: 'company', // a unique name for this form
+  validate,                // redux-form同步验证 
+})(EditCompanyForm);
+```
+
+
+
