@@ -26,12 +26,33 @@
         : undefined)
     }
 
-2、Field中加入：
+2、编写component
+
+```
+const renderField = ({
+  input,
+  label,
+  type,
+  meta: { touched, error, warning }
+}) => (
+  <div>
+    <label>{label}</label>
+    <div>
+      <input {...input} placeholder={label} type={type} />
+      {touched &&
+        ((error && <span>{error}</span>) ||
+          (warning && <span>{warning}</span>))}
+    </div>
+  </div>
+)
+```
+
+3、Field中加入：
 
 ```
 <Field
           name="name"
-          component=XXX
+          component=renderField
           type="text"        
           validate={[FieldValidate.required,FieldValidate.minLength6]}
           //validate={[FieldValidate.required,FieldValidate.minLength(6)]} 也可使用，但触发时机会有问题，体验不好
