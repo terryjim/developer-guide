@@ -36,5 +36,17 @@ const warn = values => {
 }
 ```
 
+2、定义component，见字段级校验
+
+3、form中加入validate\warn
+
+```
+export default reduxForm({
+  form: 'syncValidation', // a unique identifier for this form
+  validate, // <--- validation function given to redux-form
+  warn // <--- warning function given to redux-form
+})(SyncValidationForm)
+```
+
 
 
