@@ -1,6 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
+  * [react-table](react-table.md)
+    * [分页栏设置](react-table/fen-ye-lan-she-zhi.md)
 * [redux-form](chapter1.md)
   * [引入redux-from](chapter1/yin-ruredux-from.md)
   * [字段级输入校验](chapter1/shu-ru-xiao-yan.md)
