@@ -8,7 +8,7 @@
     <ReactTable 
         style={{
             height: "400px" // This will force the table body to overflow and scroll, since there is not enough room
-          //height: window.screen.height-280;按当前窗口大小减280px
+          //height: document.body.clientHeight-180;按当前网页可见区域高减180px
           }}
           …………
       />
