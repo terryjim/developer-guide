@@ -10,7 +10,7 @@ _**\[删除\] **_操作默认为 defaultUrl/project/save
 
 _**\[查询\] **_操作默认为 defaultUrl/project/getByPage
 
-若不使用约定地址则在配置文件中自行设置地址。
+在配置文件中找不到相应地址就使用约定地址。
 
 代码如下：
 
