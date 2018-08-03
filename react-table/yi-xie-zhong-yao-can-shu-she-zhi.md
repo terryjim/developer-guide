@@ -14,5 +14,33 @@
       />
 ```
 
+2、loading
+
+显示数据加载中，state中设置变量标识是否加载完数据
+
+```
+constructor(props) {
+    super(props);
+    this.state = {     
+    //打开时显示加载中
+      loading:true,
+      ………………
+    };
+}
+componentWillReceiveProps(nextProps) {
+    //收到数据后关闭加载中
+    this.setState({loading:false})
+     …………
+  }  
+  
+<ReactTable
+style={{
+height: "400px" // This will force the table body to overflow and scroll, since there is not enough room
+loading={this.state.loading}
+}}
+…………
+/>
+```
+
 
 
