@@ -148,7 +148,7 @@ render=()=>{
 }
 //渲染组件
 render()
-store.subscribe(render);  //监听state的变化，一但发生变化调用render方法
+store.subscribe(render);  //监听state的变化，一旦发生变化调用render方法
 ```
 
 手动连接仅作为介绍原理用，有两个明显的缺点
@@ -157,6 +157,4 @@ store.subscribe(render);  //监听state的变化，一但发生变化调用rende
 * 任意state的变化都会导致整个组件树的重新渲染，没有优化性能
 
 实际项目采用react-redux方式实现
-
-
 
