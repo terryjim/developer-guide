@@ -83,7 +83,7 @@ store.dispatch(decrement())
 
 Redux Thunk中间件可以让Action创建函数先不返回action对象，而是返回一个函数。通过这个函数延迟dispatch或者只在满足指定条件的情况下dispatch。这个内部函数接受store的两个方法dispatch、getState作为参数。
 
-使用redux thunk需要安装`  npm install -save redux-thunk`
+使用redux thunk需要安装`npm install -save redux-thunk`
 
 使用时引入thunk和applyMiddleware，并在createStore中激活
 
@@ -99,7 +99,7 @@ const incrementIfOdd=()=>(dispatch,getState)=>{     //奇数+1，偶数不变
     return
   dispatch(increment())
 }
- 
+
 const incrementAsyn=(delay=1000)=>(dispatch)=>{    //延时1s后执行+1操作
   setTimeout(()=>dispatch(increment()),delay)
 }
@@ -131,10 +131,32 @@ store.dispatch(increment())
 store.dispatch(decrement())
 store.dispatch(incrementIfOdd())
 store.dispatch(incrementAsyn())
-
 ```
 
+## 6、redux手动连接到react组件
 
+* 将state和发起action的方法连接到组件
+* 渲染组件并监听变化
+
+```
+//定义render函数以用于store监听调用
+render=()=>{
+  ReqctDOM.render(
+    <Count value={store.getState()} onIncrement={()=>store.dispatch({type:'INCREMENT'})} />,
+    document.getElementById('root')
+  )
+}
+//渲染组件
+render()
+store.subscribe(render);  //监听state的变化，一但发生变化调用render方法
+```
+
+手动连接仅作为介绍原理用，有两个明显的缺点
+
+* 无法直接给里面的组件传递state和方法
+* 任意state的变化都会导致整个组件树的重新渲染，没有优化性能
+
+实际项目采用react-redux方式实现
 
 
 
