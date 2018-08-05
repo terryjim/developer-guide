@@ -1,5 +1,3 @@
-
-
 # 分页栏设置
 
 1、分页栏样式设置：
@@ -52,7 +50,7 @@ Object.assign(ReactTableDefaults, {
 
 如果要自定义类最好下载对应源码进行修改
 
-以下为自定义的page类，增加了总记录数功能，total由参数传递过来
+以下为自定义的page类，根据源码修改而来，只增加了两行代码实现总记录数功能，一行为从props中取得total，一行为显示total
 
     import React, { Component } from 'react'
     import classnames from 'classnames'
@@ -194,7 +192,6 @@ Object.assign(ReactTableDefaults, {
         )
       }
     }
-
 
 react-table调用如下：
 
