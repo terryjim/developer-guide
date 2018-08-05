@@ -1,4 +1,4 @@
-# redux简介
+# redux基础概念
 
 ## 1、Action
 
@@ -11,8 +11,6 @@ const logined = ({ token, userName}) => ({
     userName
 })
 ```
-
-
 
 ## 2、Reducer
 
@@ -43,8 +41,6 @@ const count=(state=0,action)=>{
 
 因此在上述reducer中切记不要修改state参数，通常采用Object.assign或直接使用Immutable.js生成的不可娈数据类型。
 
-
-
 ## 3、Store
 
 Stroe是个全局对象，将action、reducer和state联系在一起，负责更新、查询、订阅state等工作。Store有以下功能：
@@ -69,7 +65,6 @@ store.subscribe(()=>{     //注册监听器
 //发起action
 store.dispatch({type:'INCREMENT'})
 store.dispatch({type:'DECREMENT'})
-
 ```
 
 

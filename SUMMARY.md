@@ -16,5 +16,5 @@
 * [spring boot](spring-boot.md)
   * [mongodb模糊查询](spring-boot/mongodbmo-hu-cha-xun.md)
 * [Redux](redux.md)
-  * [redux简介](redux/reduxjian-jie.md)
+  * [redux基础概念](redux/reduxjian-jie.md)
 
