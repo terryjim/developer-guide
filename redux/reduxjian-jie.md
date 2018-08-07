@@ -226,9 +226,61 @@ export default connect(
 )(Count)
 ```
 
+前面两种写法调用方式一样，都将action传入到props中，调用方式如下
 
+```
+const Counter=({counter,increment,decrement,incrementIfOdd}){   //析构写法，无状态对象可直接使用props参数，
+//即分别为props.counter,props.increment...正常写法为参数props,则下面调用为props.counter,props.increment...
 
+  return(
+    <p>
+      Clicked:{counter} times
+      <button onClick={increment}> + </button>
+      <button onClick={decrement}> - </button>
+      <button onClick={incrementIfOdd}> odd </button>
+    </p>
+  )
+```
 
+3、第三种为第二种方式的简单写法，调用redux的bindActionCreators减少代码，调用方式一样
+
+```
+import {increment,decrement,incrementIfOdd} form '../actions'
+```
+
+```
+import Counter from '../component/Count'
+import { connect } from 'react-redux'
+import {bindActionCreators} from 'redux'
+import * as ActionCreators form '../actions'
+
+export default connect(
+  state=>({count:state.count}),
+  dispatch=>bindActionCreators(ActionCreators，dispathc)
+)(Counter)
+```
+
+4、只传一个state参数，此种方式会自动将dispatch绑定到props中，让组件自己调用需要的action
+
+```
+export default connect(
+  state=>({count:state.count}) 
+)(Counter)
+```
+
+调用方式：
+
+```
+const Counter=({dispatch}){   //connect只传递一个参数，自动将dispatch绑定到props
+  return(
+    <p>
+      Clicked:{counter} times
+      <button onClick={()=>dispatch(increment())}> + </button>
+      <button onClick={()=>dispatch(decrement))}> - </button>
+      <button onClick={()=>dispatch(incrementIfOdd())}> odd </button>
+    </p>
+  )
+```
 
 
 
