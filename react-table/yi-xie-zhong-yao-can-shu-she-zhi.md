@@ -32,7 +32,7 @@ componentWillReceiveProps(nextProps) {
     this.setState({loading:false})
      …………
   }  
-  
+
 <ReactTable
 style={{
 height: "400px" // This will force the table body to overflow and scroll, since there is not enough room
