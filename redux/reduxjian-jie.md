@@ -81,7 +81,7 @@ store.dispatch(decrement())
 
 ## 5、Redux Thunk中间件
 
-Redux Thunk中间件可以让Action创建函数先不返回action对象，而是返回一个函数。通过这个函数延迟dispatch或者只在满足指定条件的情况下dispatch。这个内部函数接受store的两个方法dispatch、getState作为参数。
+Redux Thunk中间件可以让Action创建函数先不返回action对象，而是返回一个函数。通过这个函数延迟dispatch或者只在满足指定条件的情况下dispatch。这个内部函数接受store的两个方法**dispatch、getState**作为参数。
 
 使用redux thunk需要安装`npm install -save redux-thunk`
 
@@ -157,4 +157,78 @@ store.subscribe(render);  //监听state的变化，一旦发生变化调用rende
 * 任意state的变化都会导致整个组件树的重新渲染，没有优化性能
 
 实际项目采用react-redux方式实现
+
+## 7、使用react-redux连接
+
+创建了store、action（redux-thunk）后通过两步实现连接：
+
+* 所有组件顶层使用Provider组件给**整个程序**提供store，一般为index.js或引用的App.js中
+* ```
+  import { Provider } from 'react-redux'
+  ……………………
+  ReactDOM.render(
+    <Provider store={store}>
+    .......
+    </Provider>, document.getElementById('root')
+  )
+  ```
+* 使用connect\(\)将state和action绑定到组件中
+
+```
+import { connect } from 'react-redux'
+........................
+class Building extends Component{
+.............
+}
+const mapStateToProps = (state) => {
+  let buildings = state.cList 
+  return { buildings, editedIds }
+}
+Building = connect(
+  mapStateToProps
+)(Building)
+export default Building;
+```
+
+## 8、connect使用方式
+
+connect有一个或两个参数，第一个参数都是state
+
+1、第二个参数为多个action创建函数组成的对象
+
+```
+import * as ActionCreators form '../actions'
+import Count from '../component/Count'
+import { connect } from 'react-redux'
+
+export default connect(
+  state=>({count:state.count}),
+  ActionCreators
+)(Count)
+```
+
+2、第二个参数为dispatch函数
+
+```
+import {increment,decrement,incrementIfOdd} form '../actions'
+import Count from '../component/Count'
+import { connect } from 'react-redux'
+
+export default connect(
+  state=>({count:state.count}),
+  dispatch=>(
+    {
+      increment:()=>dispatch(increment()),
+      decrement:()=>dispatch(decrement()),
+      incrementIfOdd:()=>dispatch(incrementIfOdd()),
+    }
+  )
+)(Count)
+```
+
+
+
+
+
+
 

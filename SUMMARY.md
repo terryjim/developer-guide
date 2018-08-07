@@ -14,6 +14,7 @@
   * [public根目录文件如何引用](react/publicgen-mu-lu-wen-jian-ru-he-yin-yong.md)
   * [javascript中的this](react/javascriptzhong-de-this.md)
   * [jsx-style内联样式写法](react/style.md)
+  * [Props](react/props.md)
 * [core-ui](core-ui.md)
   * [主要文件引用过程](zhu-yao-wen-jian-yin-yong-guo-cheng.md)
 * [spring boot](spring-boot.md)
