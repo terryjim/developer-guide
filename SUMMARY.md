@@ -17,6 +17,7 @@
   * [Props](react/props.md)
 * [core-ui](core-ui.md)
   * [主要文件引用过程](zhu-yao-wen-jian-yin-yong-guo-cheng.md)
+  * [左侧导航栏设置](zuo-ce-dao-hang-lan-she-zhi.md)
 * [spring boot](spring-boot.md)
   * [mongodb模糊查询](spring-boot/mongodbmo-hu-cha-xun.md)
 * [Redux](redux.md)
