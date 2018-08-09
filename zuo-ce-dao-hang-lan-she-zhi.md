@@ -17,7 +17,7 @@
 | 参数名参数名 | 说明 | 优先级 | 用法 |
 | :--- | :--- | :--- | :--- |
 | name | 显示标题 |  | name: '企业管理' |
-| icon | name左侧图标 |  | icon:'icon-layers' |
+| icon | name左侧图标，菜单缩小后会只显示图标 |  | icon:'icon-layers' |
 | url | 导航地址 |  | url:'/admin' |
 | wrapper | 修饰title型的name |  | 见下文 |
 |  |  |  |  |
