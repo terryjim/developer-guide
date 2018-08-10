@@ -27,7 +27,6 @@ import style from './style.css'
     abc
 </div>
 //可以省略后面的true
-
 ```
 
 其它用法：
@@ -45,7 +44,6 @@ classNames('foo', { bar: true, duck: false }, 'baz', { quux: true }); // => 'foo
 
 // other falsy values are just ignored
 classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); // => 'bar 1'
-
 ```
 
 传入数组：
@@ -53,7 +51,6 @@ classNames(null, false, 'bar', undefined, 0, 1, { baz: null }, ''); // => 'bar 1
 ```
 var arr = ['b', { c: true, d: false }];
 classNames('a', arr); // => 'a b c'
-
 ```
 
 动态class：

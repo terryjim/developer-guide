@@ -15,9 +15,9 @@
 其它属性：
 
 | 参数名参数名 | 说明 | 优先级 | 用法 |
-| :--- | :--- | :--- | :--- |
+| :-- | :-- | :- | :--- |
 | name | 显示标题 |  | name: '企业管理' |
-| icon | name左侧图标，菜单缩小后会只显示图标 |  | icon:'icon-layers' |
+| icon | name左侧图标，菜单缩小后会只显示图标 |  | icon:'icon-layers',icon-layers为样式class而不是图标名称。在源码中icon是通过classnames库（参见react组件添加多个样式实现方式）方法）将它于其它样式合并，因此可以设置icon为数组，如在children子导航中设置了icon: \[ "icon-pie-chart"  , "right-padding" \],其中right-padding为自定义的样式右移10px，这样子导航图标将右移10px以区别于父导航 |
 | url | 导航地址 |  | url:'/admin' |
 | wrapper | 修饰title型的name |  | 见下文 |
 |  |  |  |  |
