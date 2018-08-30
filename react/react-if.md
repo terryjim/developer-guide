@@ -14,7 +14,7 @@ render() {
         </div>
     );
 },
- 
+
 renderBody() {
  return (this.props.age >= this.props.drinkingAge)
     ? <span className="ok">Have a beer, {this.props.name}!</span>
