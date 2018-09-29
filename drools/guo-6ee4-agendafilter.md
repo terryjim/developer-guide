@@ -1,4 +1,4 @@
-# 过滤-AgendaFilter
+# 过滤－－AgendaFilter
 
 对于规则的执行的控制，还可以使用org.kie.api.runtime.rule. AgendaFilter来实现。用户可以实现该接口的accept方法，通过规则当中的属性值来控制是否执行规则。
 
@@ -57,7 +57,6 @@ public class MyAgendaFilter implements AgendaFilter{
 }
 // 省略getter/setter方法
 }
-
 ```
 
 测试方法：
@@ -70,7 +69,6 @@ KieSession kSession = kieContainer.newKieSession("ksession-rule");
 AgendaFilter filter = new MyAgendaFilter("test-agenda-group");
 kSession.fireAllRules(filter);
 kSession.dispose();
-
 ```
 
 执行结果：
