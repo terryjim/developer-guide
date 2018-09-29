@@ -32,4 +32,5 @@
 * [drools](drools.md)
   * [no-loop与lock-on-active](drools/no-loopyu-lock-on-active.md)
   * [分组](drools/fen-zu.md)
+  * [过滤-AgendaFilter](drools/guo-6ee4-agendafilter.md)
 
