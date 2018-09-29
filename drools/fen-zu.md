@@ -1,4 +1,4 @@
-# 分组
+# 分组 activation-group
 
 ## activation-group {#activation-group}
 
@@ -45,7 +45,7 @@ rule otherRule
     when
     then
         System.out.println("其他规则被触发");
-    end
+    end
 ```
 
 调用代码：
