@@ -31,7 +31,8 @@
   * [redux基础概念](redux/reduxjian-jie.md)
 * [drools](drools.md)
   * [no-loop与lock-on-active](drools/no-loopyu-lock-on-active.md)
-  * [分组](drools/fen-zu.md)
+  * [分组activation-group](drools/fen-zu.md)
   * [过滤-AgendaFilter](drools/guo-6ee4-agendafilter.md)
-  * [时间设定](drools/shi-jian-she-ding.md)
+  * [时间设定date-effective、date-expires](drools/shi-jian-she-ding.md)
+  * [定时器](drools/ding-shi-qi.md)
 
