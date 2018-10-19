@@ -35,4 +35,5 @@
   * [过滤-AgendaFilter](drools/guo-6ee4-agendafilter.md)
   * [时间设定date-effective、date-expires](drools/shi-jian-she-ding.md)
   * [定时器](drools/ding-shi-qi.md)
+  * [整合spring boot注意事项](zheng-he-spring-boot-zhu-yi-shi-xiang.md)
 
