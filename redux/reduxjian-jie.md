@@ -95,7 +95,7 @@ const increment = () => ({type:'INCREMENT'})    //+1
 const decrement = () => ({type:'DECREMENT'})     //-1
 const incrementIfOdd=()=>(dispatch,getState)=>{     //奇数+1，偶数不变
   const value=getState();
-  if(value@2===0)
+  if(value%2===0)
     return
   dispatch(increment())
 }
@@ -141,7 +141,7 @@ store.dispatch(incrementAsyn())
 ```
 //定义render函数以用于store监听调用
 render=()=>{
-  ReqctDOM.render(
+  ReactDOM.render(
     <Count value={store.getState()} onIncrement={()=>store.dispatch({type:'INCREMENT'})} />,
     document.getElementById('root')
   )
