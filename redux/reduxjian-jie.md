@@ -39,7 +39,7 @@ const counter=(state=0,action)=>{
 
 ## 3、Store
 
-Stroe是个全局对象，将action、reducer和state联系在一起，负责更新、查询、订阅state等工作。Store有以下功能：
+Store是个全局对象，将action、reducer和state联系在一起，负责更新、查询、订阅state等工作。Store有以下功能：
 
 * 维持应用的state
 * 提供getState\(\)方法获取state
