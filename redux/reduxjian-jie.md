@@ -197,7 +197,7 @@ connect有一个或两个参数，第一个参数都是state
 1、第二个参数为多个action创建函数组成的对象
 
 ```
-import * as ActionCreators form '../actions'
+import * as ActionCreators from '../actions'
 import Count from '../component/Count'
 import { connect } from 'react-redux'
 
@@ -210,7 +210,7 @@ export default connect(
 2、第二个参数为dispatch函数
 
 ```
-import {increment,decrement,incrementIfOdd} form '../actions'
+import {increment,decrement,incrementIfOdd} from '../actions'
 import Count from '../component/Count'
 import { connect } from 'react-redux'
 
@@ -256,7 +256,7 @@ import * as ActionCreators form '../actions'
 
 export default connect(
   state=>({count:state.count}),
-  dispatch=>bindActionCreators(ActionCreators，dispathc)
+  dispatch=>bindActionCreators(ActionCreators，dispatch)
 )(Counter)
 ```
 
