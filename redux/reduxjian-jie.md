@@ -2,7 +2,7 @@
 
 ## 1、Action
 
-Action本质上是javascript普通对象，使用 type字段表示要执行的动作（一般被定义为字符串常量），除此外，action对象结构可随意组成。Action是store是唯一数据来源。
+Action本质上是javascript普通对象，使用 type字段表示要执行的动作（一般被定义为字符串常量），除此外，action对象结构可随意组成。Action是store的唯一数据来源。
 
 ```
 {type:'INCREMENT',...}
