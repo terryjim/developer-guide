@@ -2,3 +2,7 @@
 
 
 
+#### Install
+
+`yarn add react-navigation-header-buttons`
+
