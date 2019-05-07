@@ -100,3 +100,24 @@ const RootStack = createStackNavigator(
 
 页面内定义的navigationOptions 会覆盖全局defaultNavigationOptions，也可通过调用navigationOptions参数自定义样式
 
+```
+class DetailsScreen extends React.Component {
+  static navigationOptions = ({ navigation, navigationOptions }) => {
+    const { params } = navigation.state;
+
+    return {
+      title: params ? params.otherParam : 'A Nested Details Screen',
+      /* These values are used instead of the shared configuration! */
+      headerStyle: {
+        backgroundColor: navigationOptions.headerTintColor,
+      },
+      headerTintColor: navigationOptions.headerStyle.backgroundColor,
+    };
+  };
+
+  /* render function, etc */
+}
+```
+
+
+
