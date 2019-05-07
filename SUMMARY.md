@@ -39,7 +39,6 @@
   * [整合spring boot注意事项](zheng-he-spring-boot-zhu-yi-shi-xiang.md)
 * [react-native](React native)
   * [title标题样式](React native/titlebiao-ti-yang-shi.md)
-  * [react navigation安装](React native/react-navigation.md)
 
 ## react native
 
