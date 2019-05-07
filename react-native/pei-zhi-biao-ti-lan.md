@@ -119,5 +119,29 @@ class DetailsScreen extends React.Component {
 }
 ```
 
+#### 标题使用自定义组件：
+
+```
+class LogoTitle extends React.Component {
+  render() {
+    return (
+      <Image
+        source={require('./spiro.png')}
+        style={{ width: 30, height: 30 }}
+      />
+    );
+  }
+}
+
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+    // headerTitle instead of title
+    headerTitle: <LogoTitle />,
+  };
+
+  /* render function, etc */
+}
+```
+
 
 
