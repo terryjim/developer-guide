@@ -119,7 +119,7 @@ class DetailsScreen extends React.Component {
 }
 ```
 
-#### 标题使用自定义组件：
+#### 标题使用自定义组件：采用headerTitle属性替代title
 
 ```
 class LogoTitle extends React.Component {
