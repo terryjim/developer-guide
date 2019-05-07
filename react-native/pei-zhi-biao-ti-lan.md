@@ -14,11 +14,26 @@ class HomeScreen extends React.Component {
 class DetailsScreen extends React.Component {
   static navigationOptions = {
     title: 'Details',
+    headerStyle: {
+      backgroundColor: '#f4511e',
+    },
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+      fontWeight: 'bold',
+    },
   };
 
   /* render function, etc */
 }
 ```
+
+标题样式有三个属性：
+
+1. headerStyle：一个应用于header的最外层View的样式对象，如果你设置backgroundColor，他就是header的颜色。
+2. headerTintColor：返回按钮和标题都使用这个属性作为它们的颜色。在下面的例子中，我们将tintcolor设置为白色（\#fff），所以返回按钮和标题栏标题将变为白色。
+3. headerTitleStyle：如果我们想为标题定制fontFamily，fontWeight和其他Text样式属性，我们可以用它来完成。
+
+
 
 #### 标题中使用参数
 
