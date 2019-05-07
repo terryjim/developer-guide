@@ -98,5 +98,5 @@ const RootStack = createStackNavigator(
 );
 ```
 
-页面内定义的navigationOptions 会覆盖全局defaultNavigationOptions
+页面内定义的navigationOptions 会覆盖全局defaultNavigationOptions，也可通过调用navigationOptions参数自定义样式
 
