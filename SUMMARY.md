@@ -38,7 +38,7 @@
   * [定时器](drools/ding-shi-qi.md)
   * [整合spring boot注意事项](zheng-he-spring-boot-zhu-yi-shi-xiang.md)
 * [react-native](React native)
-  * [title标题样式](React native/titlebiao-ti-yang-shi.md)
+  * [react navigation安装](React native/react-navigationan-zhuang.md)
 
 ## react native
 
