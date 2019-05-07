@@ -43,5 +43,9 @@ static navigationOptions = ({ navigation, navigationOptions, screenProps }) => {
 。。。
 ```
 
+* navigation- 页面的导航属性，在页面中的路由为navigation.state。
+* screenProps- 从导航器组件上层传递的 props
+* navigationOptions- 如果未提供新值，将使用的默认或上一个选项
+
 
 
