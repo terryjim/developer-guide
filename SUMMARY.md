@@ -43,5 +43,6 @@
   * [导航栏定制样式－－react-navigation-header-buttons](dao-hang-lan-ding-zhi-yang-shi-ff0d-ff0d-react-navigation-header-buttons.md)
   * [flexbox口诀](react-native/flexboxkou-jue.md)
   * [stack navigator](react-native/stack-navigator.md)
+  * [stack navigator路由传参](react-native/stack-navigatorlu-you-chuan-can.md)
   * [React Navigation 生命周期事件](react-native/react-navigation-sheng-ming-zhou-qi-shi-jian.md)
 
