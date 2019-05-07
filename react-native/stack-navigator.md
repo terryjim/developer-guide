@@ -52,3 +52,9 @@ export default createAppContainer(AppNavigator);
 
 创建普通页面对象--&gt;createStackNavigator组装--&gt;createAppContainer封装，通过定义的跌幅名字，如上方Home\Detail进行导航
 
+#### navigation.navigate\('Home'\)与navigation.push\('Home'\)区别：
+
+每次调用 \` push \` 时, 我们会向导航堆栈中添加新路由，而navigate则跳转新页面才有用。即当前页面为Home时，navigate\('Home'\)不起作用，而push\('Home'\)会新建一个Home出来（点击返回时会回到上一个Home\)
+
+
+
