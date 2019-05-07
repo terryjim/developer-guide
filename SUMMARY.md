@@ -37,8 +37,6 @@
   * [时间设定date-effective、date-expires](drools/shi-jian-she-ding.md)
   * [定时器](drools/ding-shi-qi.md)
   * [整合spring boot注意事项](zheng-he-spring-boot-zhu-yi-shi-xiang.md)
-* [react-native](React native)
-  * [react navigation安装](React native/react-navigationan-zhuang.md)
-
-## react native
+* [React Native](react-native.md)
+  * [react navigation安装](react-native/react-navigationan-zhuang.md)
 
