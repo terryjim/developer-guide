@@ -33,8 +33,6 @@ class DetailsScreen extends React.Component {
 2. headerTintColor：返回按钮和标题都使用这个属性作为它们的颜色。在下面的例子中，我们将tintcolor设置为白色（\#fff），所以返回按钮和标题栏标题将变为白色。
 3. headerTitleStyle：如果我们想为标题定制fontFamily，fontWeight和其他Text样式属性，我们可以用它来完成。
 
-
-
 #### 标题中使用参数
 
 ```
@@ -75,5 +73,30 @@ static navigationOptions = ({ navigation, navigationOptions, screenProps }) => {
   />
 ```
 
+#### 全局通用样式：
 
+```
+const RootStack = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Details: DetailsScreen,
+  },
+  {
+    initialRouteName: 'Home',
+    /* The header config from HomeScreen is now here */
+    /*所有页面标题样式*/
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#f4511e',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  }
+);
+```
+
+页面内定义的navigationOptions 会覆盖全局defaultNavigationOptions
 
