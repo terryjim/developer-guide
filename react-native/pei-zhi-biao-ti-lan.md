@@ -47,5 +47,18 @@ static navigationOptions = ({ navigation, navigationOptions, screenProps }) => {
 * screenProps- 从导航器组件上层传递的 props
 * navigationOptions- 如果未提供新值，将使用的默认或上一个选项
 
+#### 
+
+#### 使用setParams更新navigationOptions
+
+当前页面更新标题栏：
+
+```
+<Button
+    title="Update the title"
+    onPress={() => this.props.navigation.setParams({otherParam: 'Updated!'})}
+  />
+```
+
 
 
