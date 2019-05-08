@@ -47,5 +47,6 @@
     * [React Navigation 生命周期事件](react-native/react-navigation-sheng-ming-zhou-qi-shi-jian.md)
     * [stack navigator路由传参](react-native/stack-navigatorlu-you-chuan-can.md)
     * [配置标题栏](react-native/pei-zhi-biao-ti-lan.md)
-* [标题栏和其所属的页面之间的交互](biao-ti-lan-he-qi-suo-shu-de-ye-mian-zhi-jian-de-jiao-hu.md)
+    * [标题栏和其所属的页面之间的交互](biao-ti-lan-he-qi-suo-shu-de-ye-mian-zhi-jian-de-jiao-hu.md)
+    * [在 App 容器中 调用 Dispatch 和 Navigate](react-native/zai-app-rong-qizhong-diao-yong-dispatch-he-navigate.md)
 
