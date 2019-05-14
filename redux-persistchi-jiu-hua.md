@@ -19,7 +19,7 @@ const persistConfig = {
   storage,
 }
 const persistedReducer = persistReducer(persistConfig, reducers)
-const store = createStore(reducers, undefined,
+const store = createStore(persistedReducer, undefined,
   compose(
     applyMiddleware(thunk),
     /* autoRehydrate() */
