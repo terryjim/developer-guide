@@ -38,7 +38,7 @@
   * [定时器](drools/ding-shi-qi.md)
   * [整合spring boot注意事项](zheng-he-spring-boot-zhu-yi-shi-xiang.md)
 * [React Native](react-native.md)
-  * [导航栏定制样式－－react-navigation-header-buttons](dao-hang-lan-ding-zhi-yang-shi-ff0d-ff0d-react-navigation-header-buttons.md)
+  * [开发指南](kai-fa-zhi-nan.md)
   * [flexbox口诀](react-native/flexboxkou-jue.md)
   * [redux-persist持久化](redux-persistchi-jiu-hua.md)
   * [React Navigation 3](react-native/react-navigation-3.md)
@@ -48,6 +48,7 @@
     * [React Navigation 生命周期事件](react-native/react-navigation-sheng-ming-zhou-qi-shi-jian.md)
     * [stack navigator路由传参](react-native/stack-navigatorlu-you-chuan-can.md)
     * [配置标题栏](react-native/pei-zhi-biao-ti-lan.md)
+    * [导航栏定制样式－－react-navigation-header-buttons](dao-hang-lan-ding-zhi-yang-shi-ff0d-ff0d-react-navigation-header-buttons.md)
     * [标题栏和其所属的页面之间的交互](biao-ti-lan-he-qi-suo-shu-de-ye-mian-zhi-jian-de-jiao-hu.md)
     * [在 App 容器中 调用 Dispatch 和 Navigate](react-native/zai-app-rong-qizhong-diao-yong-dispatch-he-navigate.md)
 
