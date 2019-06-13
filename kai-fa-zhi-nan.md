@@ -54,5 +54,7 @@ yarn add react-native-root-toast
 //yarn add react-native-root-sibling
 ```
 
+5、加密算法
 
+`yarn add crypto-js`
 
