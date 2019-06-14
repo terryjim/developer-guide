@@ -58,3 +58,11 @@ yarn add react-native-root-toast
 
 `yarn add crypto-js`
 
+6、loading遮罩
+
+```
+yarn add react-native-loading-spinner-overlay
+```
+
+
+
