@@ -64,5 +64,13 @@ yarn add react-native-root-toast
 //废弃－－ yarn add react-native-loading-spinner-overlay
 ```
 
+7、大列表
+
+```
+yarn add react-native-spring-scrollview react-native-largelist-v3
+
+react-native link react-native-spring-scrollview
+```
+
 
 
