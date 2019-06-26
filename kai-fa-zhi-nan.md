@@ -72,5 +72,12 @@ yarn add react-native-spring-scrollview react-native-largelist-v3
 react-native link react-native-spring-scrollview
 ```
 
+8、开屏页
+
+```
+npm i react-native-splash-screen --save
+react-native link react-native-splash-screen
+```
+
 
 
